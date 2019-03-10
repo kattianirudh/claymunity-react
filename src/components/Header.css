@@ -1,0 +1,276 @@
+/*--------------------------------
+COLOR SCHEME
+----------------------------------*/
+/*
+Main Blue Shade:
+#226766
+
+Greys:
+#777777
+#bbbbbb
+#444444
+#707070
+#101010
+
+White:
+#ffffff 
+*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700'); */
+/*--------------------------------
+SETUP
+----------------------------------*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 
+        /* 'Montserrat', */
+        'Segoe UI',
+        -apple-system,
+        BlinkMacSystemFont,
+        Roboto, Oxygen,
+        Cantarell, 'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+        height: 100vh;
+}
+
+
+/*--------------------------------
+BASIC LAYOUT
+----------------------------------*/
+.homepage-container {
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.homepage-container .height-100 {
+    height: 100vh;
+}
+
+/*--------------------------------
+LAYOUT DIVISIONS
+----------------------------------*/
+
+/*--------Whole Left Pane--------*/
+
+.left-pane {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    margin: 0;
+
+}
+
+/*--------Name Div--------*/
+
+.name-div {
+    /*height: 15vh;*/
+    padding: 0.5em;
+    background-color: #226766;
+    color: #fff;
+}
+
+.names {
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: 0.2em;
+    margin-top: 0;
+}
+
+.username {
+    margin-left: 0.5em;
+    font-size: 95%;
+    margin-top: 0;
+}
+
+/*--------Workspace List--------*/
+
+.workspace-list-div {
+    width: 30%;
+    /* height: 88vh; */
+    background-color: #226766;
+    display: flex;
+    padding-top: 5vh;
+    font-weight: 700;
+}
+.workspace-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.workspace-list span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    color: #444444;
+
+    border-radius: 14px;
+    padding: 1.8em;
+    text-decoration: none;
+    height: 18px;
+    width: 18px;
+
+    transition: all 0.2s;
+    margin-bottom: 0.8em;
+    border: 2px solid #eeeeee;
+}
+
+.workspace-list span:hover {
+    background-color: #226766;
+    color: #cccccc;
+    border: 2px solid #cccccc;
+}
+
+
+/*--------Channel Pane Div--------*/
+
+.channel-details-div {
+    width: 70%;
+    /* height: 88vh; */
+    display: flex;
+    flex-direction: column;
+
+    border-right: 3px solid #22676699;
+    background-color: #eeeeee;
+}
+
+.channel-header {
+    border-bottom: 2px solid #22676699;
+    padding: 0 0 0.45em 0.5em;
+    margin-top: 0.3em;
+    font-weight: 400;
+    color: #226766;
+}
+
+.channel-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 1.2em;
+    cursor: pointer;
+}
+
+.channel-list div{
+    margin-bottom: 0.5em;
+    transition: all 0.3s;
+    font-size: 15pt;
+}
+
+.channel-list div:hover {
+    border-left: 5px solid #226766;
+    padding-left: 0.6em;
+    background-color: #2267661a;
+}
+
+.channel-list input {
+    text-align: start;
+    border: none;
+    background-color: transparent;
+}
+
+.channel-list p {
+    display: inline;
+}
+
+.channel-list input:hover {
+    cursor: pointer;
+}
+
+.channel-name {
+    color: #444444;
+}
+
+
+/*--------------------------------
+Media Queries
+----------------------------------*/
+
+@media screen and (max-width: 1024px)
+{
+    /*--------Whole Left Pane--------*/
+
+    .left-pane
+    {
+        width: 30%;
+    }
+
+    .details 
+    {
+        /*height: 92vh;*/
+    }
+
+    /*--------Name Div--------*/
+
+    .name-div 
+    {
+        height: 8vh;
+    }
+
+    .name 
+    {
+        font-weight: 450;
+        margin-left: 0.1em;
+        font-size: 25px;
+    }
+
+    .username
+    {
+        margin-left: 0.4em;
+        margin-top: 0.1em;
+        font-size: 95%;
+    }
+
+    /*--------Workspace List--------*/
+
+    .workspace-list-div 
+    {
+        font-weight: 600;
+        padding-top: 3.5vh;
+    }
+
+    .workspace-list span 
+    {
+        border-radius: 15px;
+        padding: 1.5em;
+        height: 17px;
+        width: 17px;
+    }
+
+    /*--------Channel Pane Div--------*/
+
+   .channel-header 
+   {
+        padding: 0 0 0.45em 0.45em;
+        font-weight: 300;
+        font-size: 17pt;
+    }
+
+    .channel-list 
+    {
+        padding-left: 1em;
+    }
+
+    .channel-list input
+    {
+        font-size: 11pt;
+        overflow-wrap: break-word;
+    }
+
+    /*----- Actual Workspace-----*/
+
+    .workspace-div 
+    {
+        width: 70%;
+    }
+}
