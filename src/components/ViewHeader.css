@@ -1,0 +1,15 @@
+.workspace-name {
+    height: 8vh;
+    display: block;
+    /* border-bottom: 3px solid #226766; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workspace-name h2 {
+    font-size: 26pt;
+    font-weight: 300;
+    color: #226766;
+}
