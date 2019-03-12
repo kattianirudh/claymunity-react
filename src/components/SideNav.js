@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./Header.css";
+import "./SideNav.css";
 
-class Header extends Component {
+class SideNav extends Component {
   render() {
     return (
         <div className="height-100 left-pane">
@@ -41,4 +41,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default SideNav;

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import ViewHeader from "./ViewHeader";
-import Messages from "./Messages";
-import "./ViewTop.css";
+import MainViewHeader from "./MainViewHeader";
+import MessagesContainer from "./MessagesContainer";
+import "./MainView.css";
 
-class ViewTop extends Component {
+class MainView extends Component {
   render() {
     return (
       <div class="height-100 workspace-div">
         <div className="workspace-main">
-          <ViewHeader />
+          <MainViewHeader />
           <div className="messages-div">
             <div className="messages-box" id="messages-box" />
-            <Messages />
+            <MessagesContainer />
           </div>
         </div>
       </div>
@@ -19,4 +19,4 @@ class ViewTop extends Component {
   }
 }
 
-export default ViewTop;
+export default MainView;

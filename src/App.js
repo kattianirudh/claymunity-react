@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import Header from './components/Header';
-import ViewTop from './components/ViewTop';
+import SideNav from './components/SideNav';
+import MainView from './components/MainView';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App" style = {{width : "100%", display: "flex"}}>
-          <Header />
-          <ViewTop />
+          <SideNav />
+          <MainView />
       </div>
     );
   }

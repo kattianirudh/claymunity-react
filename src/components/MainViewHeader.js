@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './ViewHeader.css';
+import './MainViewHeader.css';
 
 //This is the component that includes the workplace name
-class ViewHeader extends Component {
+class MainViewHeader extends Component {
   render() {
     return (
-        <div className = "ViewHeader">
+        <div className = "MainViewHeader">
             <div className="workspace-name">
                 <h2>Workspace Name</h2>
         </div>
@@ -14,4 +14,4 @@ class ViewHeader extends Component {
   }
 }
 
-export default ViewHeader;
+export default MainViewHeader;
