@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ViewHeader from "./ViewHeader";
+import Messages from "./Messages";
 import "./ViewTop.css";
 
 class ViewTop extends Component {
@@ -10,6 +11,7 @@ class ViewTop extends Component {
           <ViewHeader />
           <div className="messages-div">
             <div className="messages-box" id="messages-box" />
+            <Messages />
           </div>
         </div>
       </div>

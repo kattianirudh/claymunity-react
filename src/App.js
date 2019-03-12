@@ -7,7 +7,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App" style = {{width : "100%"}}>
+      <div className="App" style = {{width : "100%", display: "flex"}}>
           <Header />
           <ViewTop />
       </div>

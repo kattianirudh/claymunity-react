@@ -9,7 +9,7 @@ class Header extends Component {
             <h1 className="names">Hello, Anirudh</h1>
             <p className="username">@kattianirudh</p>
           </div>
-          <div className="details" style={{ height: "88vh" }}>
+          <div className="details" style={{ height: "88vh" ,display:"flex"}}>
             <div className="workspace-list-div">
               <div className="workspace-list">
                 <span>GN</span>
